@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meok-dora-tlpt-planner-mcp"
+version = "1.0.0"
+description = "DORA Article 26 Threat-Led Penetration Testing planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates, HMAC-signed compliance attestations. By MEOK AI Labs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Nicholas Templeman", email = "nicholas@csoai.org" }]
+keywords = [
+    "mcp", "model-context-protocol", "mcp-server",
+    "dora", "tlpt", "tiber-eu", "compliance",
+    "fintech", "financial-services", "regtech",
+    "ai-governance", "meok-ai-labs", "signed-attestation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/CSOAI-ORG/meok-dora-tlpt-planner-mcp"
+Issues = "https://github.com/CSOAI-ORG/meok-dora-tlpt-planner-mcp/issues"
+Documentation = "https://meok.ai/docs"
+
+[project.scripts]
+meok-dora-tlpt-planner = "meok_dora_tlpt_planner:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["meok_dora_tlpt_planner"]
+
+[tool.mcp]
+mcpName = "io.github.CSOAI-ORG/meok-dora-tlpt-planner-mcp"

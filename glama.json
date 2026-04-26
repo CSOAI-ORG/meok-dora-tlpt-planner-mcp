@@ -1,0 +1,10 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "meok-dora-tlpt-planner",
+  "description": "DORA Article 26 TLPT planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates, HMAC-signed compliance attestations. By MEOK AI Labs.",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/meok-dora-tlpt-planner-mcp",
+  "license": "MIT",
+  "author": "MEOK AI Labs",
+  "tags": ["dora", "tlpt", "tiber-eu", "compliance", "fintech", "mcp", "signed-attestation", "meok-ai-labs"]
+}

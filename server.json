@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.CSOAI-ORG/meok-dora-tlpt-planner-mcp",
+  "description": "DORA Article 26 TLPT planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates, HMAC-signed compliance attestations. By MEOK AI Labs.",
+  "status": "active",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/meok-dora-tlpt-planner-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://meok.ai",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "meok-dora-tlpt-planner-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
