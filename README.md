@@ -1,3 +1,7 @@
+[![meok-dora-tlpt-planner-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/meok-dora-tlpt-planner-mcp)](https://pypi.org/project/meok-dora-tlpt-planner-mcp/)
+
 [![meok-dora-tlpt-planner-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp)
 
 # meok-dora-tlpt-planner-mcp
