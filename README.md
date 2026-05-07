@@ -94,3 +94,4 @@ MIT. © 2026 Nicholas Templeman / CSOAI LTD (UK Companies House 16939677).
 - [meok-dora-compliance-mcp](https://github.com/CSOAI-ORG/dora-compliance-mcp) — broader DORA compliance toolkit (Art. 28 register, Art. 18 incident reporting)
 - [meok-attestation-api](https://meok-attestation-api.vercel.app/health) — public verifiable attestation infrastructure
 - [Full MEOK fleet](https://github.com/CSOAI-ORG)
+<!-- mcp-name: io.github.CSOAI-ORG/meok-dora-tlpt-planner-mcp -->
