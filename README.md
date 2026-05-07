@@ -1,3 +1,5 @@
+[![meok-dora-tlpt-planner-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp)
+
 # meok-dora-tlpt-planner-mcp
 
 [![PyPI](https://img.shields.io/pypi/v/meok-dora-tlpt-planner-mcp.svg)](https://pypi.org/project/meok-dora-tlpt-planner-mcp/)
