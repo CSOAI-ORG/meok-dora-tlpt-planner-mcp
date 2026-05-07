@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "meok-dora-tlpt-planner-mcp"
-version = "1.0.0"
+version = "1.0.2"
 description = "DORA Article 26 Threat-Led Penetration Testing planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates, HMAC-signed compliance attestations. By MEOK AI Labs."
 readme = "README.md"
 requires-python = ">=3.10"
