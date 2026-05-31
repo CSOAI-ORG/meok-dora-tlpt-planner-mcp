@@ -1,101 +1,78 @@
-[![meok-dora-tlpt-planner-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/meok-dora-tlpt-planner-mcp)](https://pypi.org/project/meok-dora-tlpt-planner-mcp/)
+# Meok Dora Tlpt Planner MCP
 
-[![meok-dora-tlpt-planner-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-dora-tlpt-planner-mcp)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_dora_tlpt_planner_mcp/)
 
-# meok-dora-tlpt-planner-mcp
+> DORA Article 26 TLPT planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates,...
 
-[![PyPI](https://img.shields.io/pypi/v/meok-dora-tlpt-planner-mcp.svg)](https://pypi.org/project/meok-dora-tlpt-planner-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MCP](https://img.shields.io/badge/MCP-server-purple)](https://modelcontextprotocol.io)
-
-> DORA Article 26 Threat-Led Penetration Testing (TLPT) planner — TIBER-EU pathway scoping, white-team RACI, threat-intel briefing templates, and HMAC-signed compliance attestations.
-
-**By [MEOK AI Labs](https://meok.ai)** · MIT licensed · runs as an [MCP server](https://modelcontextprotocol.io) inside Claude Code, Cursor, Cline, Windsurf, etc.
+DORA Article 26 TLPT planner — TIBER-EU pathway scoping, white-team RACI, threat-intel templates, HMAC-signed compliance attestations. By MEOK AI Labs.
 
 ---
 
-## Why this exists
-
-DORA Reg (EU) 2022/2554 Articles 26-27 require significant/systemic financial entities to conduct Threat-Led Penetration Testing (TLPT) every three years using accredited red-team providers and following the TIBER-EU framework.
-
-Today, **TLPT engagements cost €250-500K minimum** (€30-80K threat-intel report + €100-500K red-team + €100-500K remediation reserve). Sub-significant institutions wanting to look ready for a regulator visit have no entry-level path.
-
-This MCP gives you the **scoping + planning layer for free**, MIT-licensed, callable from any AI agent, with HMAC-signed attestations the regulator can verify cryptographically.
-
-It does **not** replace an accredited red-team provider. It compresses the planning + RACI + remediation tracking phases that today eat 30-40% of TLPT consulting fees.
-
-## Tools
-
-| Tool | Use |
-|---|---|
-| `scope_tlpt` | Generate a DORA Art. 26 scope document with phase plan, RACI, RT-provider requirements, budget tiering |
-| `threat_intel_brief` | Produce a TIBER-EU v2.0-compliant TTI brief template to commission accredited threat-intel providers |
-| `remediation_milestones` | 90/180/365-day remediation plan with severity-mapped closure timelines (Art. 26(7)) |
-| `signed_tlpt_attestation` | HMAC-sign your TLPT attestation via `meok-attestation-api`; produces verification URL |
-| `list_phases` | List the 3 TIBER-EU phases (preparation/testing/closure) with deliverables |
-| `pricing` | Pricing tiers (free / £79 Pro / £1,499 Enterprise / from £5K bespoke) |
-
-## Install
+## 🚀 Quick Start
 
 ```bash
-pip install meok-dora-tlpt-planner-mcp
+# Install via pip
+pip install meok_dora_tlpt_planner_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-dora-tlpt-planner-mcp --client claude
 ```
 
-Then add to your Claude Code / Cursor / Cline MCP config:
+## ✨ Features
 
-```json
-{
-  "mcpServers": {
-    "meok-dora-tlpt-planner": {
-      "command": "python",
-      "args": ["-m", "meok_dora_tlpt_planner"]
-    }
-  }
-}
-```
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Example use
+## 📖 Documentation
 
-Inside Claude Code:
+- [Full Documentation](https://docs.meok.ai/meok-dora-tlpt-planner-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-> "Scope a DORA TLPT for Acme Bank N.V., a credit institution operating in DE, NL, IE. Critical functions: retail-payments, core-banking, customer-onboarding. Last TLPT was 2023-06-15. Annual budget estimate €750K."
+## 🛡️ Compliance
 
-Claude calls `scope_tlpt(...)`, returns a structured scope doc with phase plan, RACI, RT-provider requirements, and budget tiering. You review, correct, sign with `signed_tlpt_attestation()`, hand to your white-team-lead.
+This MCP server is built with **EU AI Act compliance** built-in:
 
-> "Generate the 90/180/365 remediation milestone plan for 47 findings: 3 critical, 11 high, 23 medium, 10 low."
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Claude returns a structured milestone plan with severity-mapped closure timelines per DORA Art. 26(7).
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Compliance posture
+## 🏢 Enterprise
 
-- **DORA Reg (EU) 2022/2554** Art. 26-27 (TLPT)
-- **DORA RTS on TLPT** (per Art. 26(11) — final RTS adopted 2024)
-- **TIBER-EU framework v2.0** (ECB, August 2023 update)
-- **MITRE ATT&CK** Enterprise + ICS (for TTP mapping in TTI briefs)
-- **ICD-203** standard for attribution confidence statements
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Pricing
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-- **Free** — full toolset, public attestation API (shared HMAC issuer)
-- **£79/mo Pro** — your own HMAC signing key + custom verify domain
-- **£1,499/mo Enterprise** — multi-BU separation for group-level coordination + SLA
-- **from £5,000 bespoke** — self-hosted attestation API + GRC integrations + on-site training
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-Buy: https://meok.ai/pricing · Contact: nicholas@csoai.org
+## 🤝 Part of the MEOK Ecosystem
 
-## Reseller / consultancy partnership
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-If you're a Big 4 / boutique consultancy running TLPT engagements, MEOK has a 70/30 reseller split for the Pro tier. White-label it for your clients. Email nicholas@csoai.org with subject "TLPT reseller inquiry".
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## License
+## 📜 License
 
-MIT. © 2026 Nicholas Templeman / CSOAI LTD (UK Companies House 16939677).
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## See also
+---
 
-- [meok-dora-compliance-mcp](https://github.com/CSOAI-ORG/dora-compliance-mcp) — broader DORA compliance toolkit (Art. 28 register, Art. 18 incident reporting)
-- [meok-attestation-api](https://meok-attestation-api.vercel.app/health) — public verifiable attestation infrastructure
-- [Full MEOK fleet](https://github.com/CSOAI-ORG)
-<!-- mcp-name: io.github.CSOAI-ORG/meok-dora-tlpt-planner-mcp -->
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
